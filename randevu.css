@@ -1,0 +1,12 @@
+table {
+    border-spacing: 10px;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+td {
+    border: 3px solid black;
+    padding:10px;
+   
+}
+tr:hover {background-color: #D6EEEE;}

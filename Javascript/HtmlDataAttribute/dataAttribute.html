@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Html5 ile gelen yeni bir Attribute data-*  -->
+    <p data-renk="kirmizi" data-agirlik="200gr" data-sayfaSayisi="400" id="test" onclick="tikla()">Deneme 123</p>
+
+    <script>
+    function tikla(){
+        //1.yol
+       var test=document.getElementById("test");
+        //Data'ya ulasim icin 1.yol dataset kullanimi
+        console.log(test.dataset.renk);
+        //2.yol
+        console.log(test.getAttribute("data-sayfaSayisi"));
+
+        // Degistirmek icin setAttribute() kullanilir
+        test.setAttribute("data-renk","Mavi");
+        console.log(test.dataset.renk);
+        
+    }
+    </script>
+</body>
+</html>

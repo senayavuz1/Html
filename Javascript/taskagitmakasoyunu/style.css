@@ -1,0 +1,37 @@
+*{
+    margin : 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Yukarıdan aşağıdan ortalamak için gerekli kod */
+    align-items: center; /*Sağdan soldan ortalamak için gerekli kod */
+    height: 100vh ; /* Sayfanın tamamının yüksekliğini almak için gerekli kod */
+}
+.container{
+    display: flex;
+    flex-direction: row; /* Kendi içindeki elemanlar öğeler yan-yana dizilsin diye*/
+    flex-wrap: wrap; /*Resimler yanyana sığmazsa alta devam etsin diye */
+    justify-content: space-between; /*Resimleri sağa ve sola yasla */
+    align-items: center; /*Dikeydeki hizalamamızı ortalamak için */
+    width: 80%;
+    height: auto;
+    border: thin solid black;
+    border-radius: 2rem ;
+    padding: 1rem;
+}
+
+
+.baslik{
+    color:grey;
+    font-size: 2rem;
+    text-align: center;
+}
+button{
+    margin-top: 20px;
+}

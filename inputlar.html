@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inputlar.css">
+</head>
+<body>
+<div class="container"></div>
+  <form action="test.php" method="get">
+      <input type="hidden" value="şdfgşgşgfkjsdfgjhsdf" id="myHidden">
+    <table>
+        <tr>
+            <td><label for="adsoyad">Adiniz:</label></td>
+            <td><input type="text" id="adsoyad" required></td>
+        </tr>
+
+        <tr>
+            <td> <label for="">email:</label></td>
+            <td><input type="email" required></td>
+        </tr>
+
+        <tr>
+            <td> <label for="">Gsm:</label></td>
+            <td><input type="tel" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Dogum Tarihi:</label></td>
+            <td><input type="date" min="01.01.2020" ></td>
+        </tr>
+        <tr>
+            <td>Telefon</td>
+            <td><input type=""></td>
+        </tr>
+        <tr>
+            <td>Şifre</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Cinsiyet</td>
+            <td>
+                <input type="radio"  id="bayan" name="cinsiyet"><label for="Bayan" id="lblBayan">Bayan</label>
+                <input type="radio"  id="erkek" name="cinsiyet"><label for="Erkek" id="lblErkek">Erkek</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobileriniz</td>
+            <td>
+                <input type="checkbox"  id="kitap" name="kitap"><label for="kitap" >Kitap</label>
+                <input type="checkbox"  id="yuzme" name="yuzme"><label for="yuzme" >Yuzme</label>
+                <input type="checkbox"  id="Kosma" name="Kosma"><label for="Kosma" >Kosma</label>
+                <input type="checkbox"  id="Sinema" name="Sinema"><label for="Sinema" >Sinema</label>
+
+            </td>
+
+        </tr>
+        <tr>   
+            <td><label for="memleket">Memleket</label></td> 
+            <td>
+                
+                <select name="memleket" id="memleket">
+                     <option value="1">Adana</option> 
+                     <option value="1">Ankara</option>   
+                     <option value="1">Bursa</option>   
+                     <option value="1">IStanbul</option>   
+                     <option value="1">IZmir</option>   
+                     <option value="1">Muş</option>   
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Notunuz</td>
+            <td><input type="number" min="10" max="100" step="5"></td>
+        </tr>
+        <tr>
+            <td><label for="gsearch">Search Google:</label></td>
+            <td><input type="search" id="gsearch" name="gsearch"></td>
+        </tr>        
+        <tr>
+            <td><label for="mycolor">Renk Secimi</label></td>
+            <td><input type="color" id="mycolor"></td>
+        </tr>
+        <tr>
+            <td><label for="myimage">Fotograf</label></td>
+            <td><input type="file" id="myimage" accept="image/png, image/jpeg"></td>
+        </tr>
+        <tr>
+            <td><label for="myimage">Zaman</label></td>
+            <td><input type="time" id="mytime" ></td>
+        </tr>
+        <tr>
+            <td>İşlem</td>
+            <td><button type="submit">Kaydet</button></td>
+            <td><input type="reset"></td>
+        </tr>
+    </table>
+</form>
+   
+    
+
+
+</body>
+</html>

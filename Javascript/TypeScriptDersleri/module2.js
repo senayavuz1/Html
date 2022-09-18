@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var module1_1 = require("./module1");
+var os = require("node:os");
+console.log(os.homedir());
+// test from  "./module1";
+console.log(module1_1.mesaj);
+var ali = new module1_1.Employee("Ali", "al123");
+ali.displayEmployee();
+console.log(ali.spmName);
